@@ -1,0 +1,48 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sign in User</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-text class="Consult-txt  mb-2 " color="black">
+    <h1 class="Consult-txt ms-4 "><img src="/assets/images/Vector.jpg" alt="">Consult</h1>
+  </ion-text>
+  <ion-card-title class="banner-txt">
+    Welcome Back !
+   </ion-card-title>
+   <img src="/assets/images/Sign In.svg" alt="" width="75%" class="login-img">
+  <ion-item lines="full">
+    <ion-label position="floating">Email <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input type="text" #email required></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Password <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input type="password" #password required></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col class="forget-txt">
+      <a expand="block"  [routerLink]="['/password-reset']" class="forgot-password-link" > Forgot Password ?</a>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" (click)="logIn(email, password)" expand="block" class="btn-login">Login</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" (click)="authService.GoogleAuth()" expand="block" class="btn-login">login with Google
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <div class="footer-text">
+    <ion-text >Dn't have an account ? <a [routerLink]="['/registration']" class="forgot-password-link">Sign Up</a></ion-text>
+  </div>
+</ion-content>

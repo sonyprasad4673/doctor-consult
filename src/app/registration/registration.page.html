@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Doctor-consult</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-card-header  class=" text-center">
+      <div> <img src="/assets/images/doctor-slide1.jpg" alt=""  width="80%"></div>
+      <ion-card-title>
+         Register With Us !
+     </ion-card-title>
+      Your information is safe with us
+    </ion-card-header>
+    <ion-item lines="full">
+      <ion-label position="floating">Email <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+
+    <ion-row class="mt-2">
+      <ion-col>
+      <ion-button type="submit" (click)="signUp(email, password)" expand="block" class="RegisetrBtn">Register</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="">
+      <ion-col>
+        <ion-button type="submit" class="btn-login" (click)="authService.GoogleAuth()" expand="block" id="GoogleBtn" >Login with Google </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+      <div class="text-center">
+        <!-- <ion-text >Dn't have an account ? <a [routerLink]="['/sign-up']" class="forgot-password-link">Sign Up</a></ion-text> -->
+        <ion-text  > Already have you an account ?<a  [routerLink]="['/login']" class="signIn-link"> Sign In </a> </ion-text>
+      </div>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
