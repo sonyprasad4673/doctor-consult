@@ -13,9 +13,14 @@ import { environment } from '../environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TipsComponent } from './tips/tips.component';
 import { GetStartedComponent } from './get-started/get-started.component';
+import { MapsComponent } from './maps/maps.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+
 
 @NgModule({
-  declarations: [AppComponent,TipsComponent,GetStartedComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  declarations: [AppComponent,TipsComponent,GetStartedComponent,MapsComponent],
   entryComponents: [],
   imports: [
     BrowserModule,

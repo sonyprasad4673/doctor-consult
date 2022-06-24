@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { GetStartedComponent } from './get-started/get-started.component';
+import { MapsComponent } from './maps/maps.component';
 import { TipsComponent } from './tips/tips.component';
 
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
   },
   {    path: 'get-started', component: GetStartedComponent,  },
   {    path: 'tips',    component: TipsComponent,  },
+  {    path: 'maps',    component: MapsComponent,  },
 ];
 
 @NgModule({
