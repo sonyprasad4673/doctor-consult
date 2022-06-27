@@ -1,6 +1,6 @@
 {
 	"appId": "io.ionic.starter",
-	"appName": "ionic-firebase-authentication",
+	"appName": "doctor-page",
 	"webDir": "www",
 	"bundledWebRuntime": false
 }
