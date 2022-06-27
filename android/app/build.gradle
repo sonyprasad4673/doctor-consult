@@ -30,6 +30,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
     implementation project(':capacitor-android')

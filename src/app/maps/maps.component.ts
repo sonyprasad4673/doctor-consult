@@ -52,7 +52,7 @@ export class MapsComponent implements OnInit {
        // Enable marker clustering
       // await this.newMap.enableClustering();
 
-      // await this.newMap.enableTrafficLayer(true);
+      await this.newMap.enableTrafficLayer(true);
 
       await this.newMap.enableCurrentLocation(true);
 
@@ -153,6 +153,8 @@ draggable: false
     });
 
   }
+
+
 
 
 }

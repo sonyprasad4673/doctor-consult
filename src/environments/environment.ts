@@ -1,5 +1,6 @@
-/* eslint-disable @typescript-eslint/naming-convention */
+
 export const environment = {
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   google_maps_api_key:'AIzaSyA5x51ajTUNbDiMRVvaNf1yJZT9qiHOUBw',
   firebase: {
     // eslint-disable-next-line @typescript-eslint/quotes
@@ -14,5 +15,5 @@ export const environment = {
     measurementId: 'G-LT67G7JFJ8',
 
   },
-  production: false
+  production: true
 };
