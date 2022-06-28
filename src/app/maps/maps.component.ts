@@ -36,7 +36,7 @@ export class MapsComponent implements OnInit {
       apiKey: environment.google_maps_api_key,
       config: {
         center: this.center,
-        zoom: 5,
+        zoom: 13,
       },
     });
     // Move the map programmatically
@@ -52,7 +52,7 @@ export class MapsComponent implements OnInit {
        // Enable marker clustering
       // await this.newMap.enableClustering();
 
-      await this.newMap.enableTrafficLayer(true);
+      // await this.newMap.enableTrafficLayer(true);
 
       await this.newMap.enableCurrentLocation(true);
 
